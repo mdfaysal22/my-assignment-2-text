@@ -1,0 +1,305 @@
+// Import 
+@import '_reset.scss';
+
+// Google Font Import Link Here..
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;700&family=Poppins:wght@200;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+
+// Global Style:
+
+/*
+font-family: 'Manrope', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+$dark-bg:#020e29;
+$light-text: #ffffff;
+$light-text-d:#dddddd;
+$bright-orange:#fe5e15;
+$bright-orange-deep: #c94000;
+$dark-text: #555555;
+$navy: #07183a;
+$border-light:#E8E8E8;
+$deep-navy: #030d23;
+
+
+
+// Components: 
+
+// Button Desgin Start ------------
+.btn-orange{
+    padding: 16px 25px;
+    border-radius: 5px;
+    background-color: $bright-orange;
+    margin: 1.5rem 0;
+    border: none;
+    a{
+        color: #fff;
+        font-family: 'Manrope',sans-serif;
+        font-weight: 500;
+        letter-spacing: 2.5px;
+    }
+}
+.btn-orange:hover{
+    background-color: $bright-orange-deep;
+}
+// Button Design End --------------------
+
+#bannar{
+    width: 90%;
+    background-color: $dark-bg;
+    margin: 1rem auto;
+    border-radius: 30px;
+    border: 0;
+    .bannar-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2rem 1rem 0 1rem;
+        .bannar-content{
+            font-family: 'poppins', sans-serif;
+            padding: 0 4rem;
+            h1{
+                font-weight: 700;
+                color: #fff;
+                font-size: 3.25rem;
+            }
+            p{
+                color: #fff;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.8;
+            }
+        }
+    }
+}
+
+
+#blogs{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;  //Flex - space-between Fixed.
+    align-items: flex-start;
+    .blog-btn-group{
+        width: 250px;
+        height: auto;
+        background-color: $dark-bg;
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+
+        .btn{
+            padding: 10px 20px;
+            margin: 0.5rem 0;
+            border-radius: 10px;
+            background-color: $light-text;
+            border: 0;
+            a{
+                color: $deep-navy;
+                font-family: 'poppins', sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+        .btn-active{
+            background-color: $bright-orange;
+            border: 0;
+            a{
+                color: $light-text;
+            }
+        }
+
+    }
+    .blogs-area{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       .main-blogs{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 10px;
+        .blog{
+            width: 275px;
+            border-radius: 10px;
+            border: 1px solid $border-light;
+            .blog-img{
+                width: 100%;
+                img{
+                    width: 100% !important;
+                }
+
+            }
+            .blog-content{
+                padding: 10px;
+                
+                .btn-light-sm{
+                    padding: 5px 10px;
+                    border: 1px solid $dark-bg;
+                    border-radius: 5px;
+
+                    a{
+                        color: #161616;
+                        font-family: 'poppins', sans-serif;
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+                }
+                h4{
+                    padding: 0.7rem 0 0 0;
+                    font-family: 'poppins', sans-serif;
+                    font-weight: 500;
+                    font-size: 1.1rem;
+                }
+
+                p{
+                    display: flex;
+                    align-items: center;
+                    padding: 1.7rem 0 0 0;
+                    justify-content: flex-start;
+                    span{
+                        margin: 0 0.3rem 0 0;
+                        font-size: 0.8rem;
+                        font-weight: 500;
+                        color: $dark-text;
+                    }
+                    .text{
+                        font-family: 'roboto',sans-serif;
+                    }
+                    .m-3{
+                        margin-left: 3rem;
+                    }
+                }
+            }
+
+            
+
+        }
+        
+        // Style for Country            
+        .country{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 275px;
+                border-radius: 10px;
+                margin: 0 10px;
+                border: 1px solid $border-light;
+                .country-image{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 3rem 0 0 0;
+                    width: 75%;
+                    column-gap: 10px;
+                    h4{
+                        font-family: 'poppins', sans-serif;
+                        font-weight: 600;
+                        font-size: 1.1rem;
+                    }
+
+                    .country-1{
+                        width:90px;
+                    }
+
+                }
+                 // Style for Country Content
+                 .country-content{
+                    text-align: center;
+                    font-family: 'Manrope', sans-serif;
+                    margin: 2rem 0;
+                    h2{
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                        color: $dark-bg;
+                    }
+                    h3{
+                        font-weight: 400;
+                        font-size: 0.9rem;
+                        color: $dark-text;
+                        margin-top: 0.5rem;
+                    }
+                 }
+
+            }
+       }
+       .view-more{
+        margin: 2rem 0 0 0;
+        display: none; //Only Seen Tablet Mode.
+        .btn-view-more{
+            background-color: $bright-orange;
+            padding: 7px 20px;
+            border-radius: 5px;
+            border: 0;
+            a{
+                font-family: 'poppins', sans-serif;
+                font-weight: 400;
+                font-size: 1rem;
+                color: $light-text;
+            }
+        }
+       }
+    }
+}
+
+
+#footer-section{
+    width: 100%;
+    background-color: $dark-bg;
+    .footer-container{
+        padding:7rem 5rem;
+
+        .footer-logo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Manrope', sans-serif;
+
+            h1{
+                color: $bright-orange;
+                font-weight: 900;
+                font-size: 5rem;
+            }
+            hr{
+                border:0;
+                width: 90%;
+                margin: 2rem 0;
+                height: 1px;
+                background-color: $bright-orange;
+            }
+            .footer-menu{
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 2rem 0;
+                    li{
+                        padding: 0 1rem;
+
+                        a{
+                            color: $bright-orange-deep;
+                            i{
+                                font-size: 1rem;
+                            }
+                        }
+
+                    }
+                    li:hover a{
+                        color: $bright-orange;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsive CSS Here....
+@import '_responsive.scss';
