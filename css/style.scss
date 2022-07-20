@@ -124,6 +124,7 @@ $deep-navy: #030d23;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         row-gap: 10px;
+        column-gap: 10px;
         .blog{
             width: 275px;
             border-radius: 10px;
